@@ -18,11 +18,11 @@ p{
 
 `
 
-export function PromotionItem({value, image, id}) {
+export function PromotionItem({ value, image, id }) {
     return (
         <ItemBox key={id}>
             <Image className={'image-icon'} src={image} width={22} height={22} />
-            <p>{value}</p>
+            <p>{(value).toUpperCase()}</p>
         </ItemBox>
     )
 }
